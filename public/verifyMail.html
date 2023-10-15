@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificacion</title>
+    <link rel="stylesheet" href="verifyMail.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="back back-container">
+        <div class="back back-arrow">
+            <a href="#"> <img src="./Iconos/vuesax_bold_arrow_left.png" alt="regresar al sitio anterior" srcset=""></a>
+        </div>
+        <div class="back back-nav">
+            <a href="http://" target="_blank" rel="noopener noreferrer"> Regresar</a>
+        </div>
+    </div>
+ <!--este bloque de codigo debe de ajustarse para que todo quede bien al centro  -->
+    <div class="main-container">
+        <figure>
+            <img src="./Iconos/logo.png" alt="logo de la empresa">
+        </figure>
+        <div class="text-container">
+            <h2> Vamos a verificar su identidad</h2>
+            <p>¿Cómo lo gustaría que le contactemos?</p>
+        </div>
+        <label for="">
+            <div class="radio-container">
+                <input type="radio" name="option" id="optionMail">
+                <p id="pMail">Envienme un correo a Z*******@gmail.com</p>
+            </div>
+            <div class="radio-container" id="text-cont">
+                <p id="pMsj">Para verificar que es su correo electronico, ingrese el código que hemos enviado a su buzón luego presione en Siguiente</p>
+                <input type="number" class="input-text" placeholder="Introduzca aquí su código">
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                <p id="opVal">
+                usar una opcion de verificacion diferente
+                </p>
+                </a>
+                <!-- <input type="radio" id="optionMsj"> -->
+            </div>
+        </label>
+        <label for="">
+            <div class="button-container">
+                <input type="button" value="Cancelar" id="btnCancel">
+                <input type="button" value="Siguiente" id="btnOk">
+            </div>
+        </label>
+    </div>
+    <footer>
+        <p>© 2023 Bizmo, All rights reserved.</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

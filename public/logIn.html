@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log In</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect"  href="https://fonts.gstatic. com" crossorigin>
+    <link href="https://fonts.  googleapis.com/css2?  family=Inter:wght@300;500&    display=swap"   rel="stylesheet">
+    <link rel="stylesheet" href="logIn.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="back-container">
+        <div class="backSVG">
+            <a href=""><img src="./Iconos/vuesax_bold_arrow_left.png" alt=""></a>
+        </div>
+        <div class="backP"> <a href="http://" target="_blank" rel="noopener noreferrer">Regresar</a></div>
+    </div>
+
+<!-- Este form es el contenedor padre de todo el log in -->
+    <form action="">
+        <figure>
+            <img src="./Iconos/logo.png" alt="logo de la empresa">
+        </figure>
+<!-- los coloco en cajas div para que sean mas faciles de manipular como cajas y no como lineas -->
+        <div class="texth2">
+            <h2>Iniciar sesión</h2>
+        </div>
+        <div class="textp">
+            <p>Portal de comercio para empresas de la industria</p>
+        </div>
+        <label for="username" class="label"> 
+            <i class="fa-solid fa-user"></i>
+            Correo electrónico
+            <input type="text" id="username" placeholder="ejemplo@mail.com">
+        </label>
+        <label for="password" class="label">
+            <i class="fa-solid fa-lock"></i>
+            Contraseña
+            <input type="password" id="password" placeholder="Escribe tu contraseña">
+        </label>
+        <a href="#">Olvidé mi contraseña</a>
+        <input type="button" value="iniciar sesión" id="btn">
+    </form>
+    <footer>
+        <p>© 2023 Bizmo, All rights reserved.</p>
+    </footer>
+</body>
+</html>

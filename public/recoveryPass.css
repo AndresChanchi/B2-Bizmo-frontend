@@ -1,0 +1,140 @@
+:root{
+    --text-xl: 28px;
+    --text-l: 20px;
+    --text-m: 18px;
+    --text-ch:14px;
+    --black-color:#121212;
+    --yellow-color: #f8f830;
+    --gray:#858585;
+    --neutral-gray:#f4f4f5;
+    --font-family:'Inter', sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.main-container{
+    margin: 100px 0px 20px 0px;
+    width: 500px;
+    min-width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+.back {
+    position: absolute;
+    left: 35px;
+    top: 30px;
+    transform: translate(0%,-20%);
+}
+.back-nav a {
+    padding-left: 25px;
+    text-decoration: none;
+    color: var(--black-color);
+    transition: border-bottom 0.3s ease;
+}
+.back a:hover{
+    border-bottom: 2px solid var(--yellow-color);
+}
+figure img{
+    margin-right: 50px;
+    flex-shrink: 0;
+    transition: transform 0.3s; /*Animacion logo*/
+}
+/* escala de transformaci{on del logo */
+figure img:hover{
+    transform: scale(1.1);
+}
+.text-container{
+    width: 80%;
+}
+.text-container h2{
+    text-align: justify;
+    font-size: var(--text-xl);
+    font-weight: 500;
+}
+.text-container p{
+    margin:8px 0px 32px 0px;
+    font-size: var(--text-m);
+    font-weight: 300;
+    color: var(--gray);
+}
+.radio-container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 22px;
+    width: 400px;
+    margin-bottom: 30px;
+}
+.radio-container p{
+    padding-left: 25px;
+    margin: 0px;
+    font-size: 16px;
+    color: var(--gray);
+}
+input[type="radio"]{
+    /* appearance elimina el estilo predeterminado */
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    border: 1px solid var(--black-color);
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+/* cambiar el color del radio cuando se selecciona */
+input[type="radio"]:checked{
+    background-color: var(--yellow-color);
+    border: 3.8px solid var(--black-color);
+}
+input[type="radio"]:hover{
+    transform: scale(1.2);
+}
+.button-container{
+    margin:18px 0px 20px 0px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+.button-container input[type="button"]{
+    width: 45%;
+    height: 36px;
+    cursor: pointer;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-radius: 16px;
+}
+#btnOk{
+    background-color: var(--black-color);
+    color: #ffff;
+    font-size: var(--text-ch);
+    transition: box-shadow 90ms;
+}
+#btnOk:hover{
+    box-shadow: inset 0px 0px 1px 2px rgb(248, 248, 48);
+}
+#btnCancel{
+    background-color: var(--neutral-gray);
+    font-size: var(--text-ch);
+    transition:  box-shadow 120ms;
+}
+#btnCancel:hover{
+    box-shadow: 
+    inset 0px 0px 1px 2px rgba(0,0, 0,0.5);
+}
+footer{
+    font-size: var(--text-ch);
+    color: var(--gray);
+    font-weight: 500;
+    margin-top: 10px;
+}
