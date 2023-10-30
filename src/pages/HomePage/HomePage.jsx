@@ -8,7 +8,6 @@ const HomePage = () => {
     const imageUrl = "https://via.placeholder.com/250x250";
     return (
         <MainLayout>
-            <Navbar />
         
             <main className="homepage-main">
                 <h1>This is a hero text for the hero section</h1>

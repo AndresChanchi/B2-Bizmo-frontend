@@ -1,20 +1,21 @@
 import React from 'react';
 import './Login.css';
-import logo from './Iconos/logo.png';
-import arrowLeft from './Iconos/vuesax_bold_arrow_left.png';
+//import logo from './Iconos/logo.png';
+//import arrowLeft from './Iconos/vuesax_bold_arrow_left.png';
 
 const Login = () => {
+  const imageURL = "https://via.placeholder.com/250x250";
   return (
     <div className="login-container">
       <div className="back-container">
         <div className="backSVG">
-          <a href="/"><img src={arrowLeft} alt="Flecha hacia atrás" /></a>
+          <a href="/"><img src={imageURL} alt="Flecha hacia atrás" /></a>
         </div>
         <div className="backP"><a href="/">Regresar</a></div>
       </div>
       <form>
         <figure>
-          <img src={logo} alt="Logo de Bizmo" />
+          <img src={imageURL} alt="Logo de Bizmo" />
         </figure>
         <div className="texth2">
           <h2>Iniciar sesión</h2>
