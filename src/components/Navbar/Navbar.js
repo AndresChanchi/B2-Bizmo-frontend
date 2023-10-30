@@ -5,15 +5,22 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
     <nav className="navbar-container">
-      <div className="logo">Bizmo</div>
-      <input type="text" placeholder="Buscar productos, marcas, etc." />
-      <div className="nav-links">
-        <a href="#">Nosotros</a>
-        <a href="#">Productos</a>
-        <a href="#">Contactanos</a>
-	    <a href="#"><Link to="/login">Iniciar sesión</Link></a>
-        <button>Registrate</button>
-      </div>
+      <section className="navbar-left">
+        <Link to="/" className="logo">Bieezmo</Link>
+        <div className="search-container">
+          <button className="searcher-image">Q</button>
+          <input className="input-bizmo" type="text" placeholder="Busque con Beezmo o Bizmo" />
+        </div>
+      </section>
+      <section className="navbar-right">
+        <div className="nav-links">
+          <Link to="/nosotros">Nosotros</Link>
+          <Link to="/productos">Productos</Link>
+          <Link to="/contactanos">Contáctanos</Link>
+          <Link to="/login">Iniciar sesión</Link>
+          <button>Regístrate</button>
+        </div>
+      </section>
     </nav>
   );
 }
