@@ -1,8 +1,12 @@
 .sub-navbar-container {
   display: flex;
   justify-content: center;
-  padding: 10px 0;
+  padding: 18px 0;
   background-color: #F4F4F4;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-color: #FFF;
+  position: relative;
 }
 
 .sub-nav-links {
@@ -17,6 +21,5 @@
 }
 
 .sub-nav-links a:hover {
-  color: #FAF800;
+  color: black;
 }
-
