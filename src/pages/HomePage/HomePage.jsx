@@ -9,28 +9,27 @@ const HomePage = () => {
     return (
         <MainLayout>
         
-            <main className="homepage-main">
-                <h1>This is a hero text for the hero section</h1>
-                <p>Lorem ipsum dolor sit amet consectetur. Rhoncus nibh vel sed maecenas volutpat orcil vell enim. Euismod pellentesque autcor consequet neque.</p>
-                <div className="cta-buttons">
-                    <button>Registrate</button>
-                    <button>Recibir asesoria</button>
-                </div>
+            <main className="hero-section">
+                <section className="hero-text">
+                    <h1>This is a hero text for the hero section</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur. Rhoncus nibh vel sed maecenas volutpat orcil vell enim. Euismod pellentesque autcor consequet neque.</p>
+                    <div className="cta-buttons">
+                        <button>Registrate</button>
+                        <button>Recibir asesoria</button>
+                    </div>
+                </section>
+                
+                <aside className="hero-images">
+                    <img src={imageUrl} alt="Hero Image 1" />
+                    <img src={imageUrl} alt="Hero Image 2" />
+		    <div className="floating-chat">
+                        <button>Hablemos!</button>
+            	    </div>
+                </aside>
             </main>
-        
-            {/* Aquí se debería agregar más imagenes o las otras cosas */}
-            <div className="floating-chat">
-                <button>Hablemos!</button>
-            </div>
 
-            <div className="hero-images">
-                <img src={imageUrl} alt="Hero Image 1" />
-                <img src={imageUrl} alt="Hero Image 2" />
-                {/* Agrega más imágenes según lo necesites */}
-            </div>
         </MainLayout>
     );
 }
 
 export { HomePage };
-

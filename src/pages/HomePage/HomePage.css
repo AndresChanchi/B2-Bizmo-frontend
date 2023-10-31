@@ -3,54 +3,52 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px; /* Ajusta según necesites */
-    background-color: #ffffff; /* Color de fondo blanco, cambia si lo requieres */
+    padding: 50px;
+    background-color: #ffffff;
 }
 
 /* Estilos para el texto del hero */
 .hero-text {
     flex: 1;
-    max-width: 50%; /* Ocupa la mitad del ancho */
+    max-width: 50%;
     padding: 20px;
 }
 
 .hero-text h1 {
-    font-size: 48px; /* Tamaño grande para el título */
+    font-size: 48px;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
 .hero-text p {
-    font-size: 20px; /* Tamaño de fuente del párrafo */
+    font-size: 20px;
     margin-bottom: 20px;
 }
 
 /* Estilos para los botones */
 .hero-text button {
-    background-color: #333333; /* Color de fondo oscuro */
-    color: #ffffff; /* Texto blanco */
-    padding: 15px 30px; /* Espaciado interno */
+    background-color: #333333;
+    color: #ffffff;
+    padding: 15px 30px;
     border: none;
-    border-radius: 5px; /* Bordes redondeados */
-    margin-right: 10px; /* Espaciado entre botones */
+    border-radius: 5px;
+    margin-right: 10px;
     cursor: pointer;
 }
 
 .hero-text button:hover {
-    background-color: #555555; /* Color de fondo un poco más claro al pasar el mouse */
+    background-color: #555555;
 }
 
 /* Estilos para las imágenes del hero */
 .hero-images {
     flex: 1;
     display: flex;
-    flex-direction: column; /* Las imágenes se apilan verticalmente */
+    flex-direction: column;
     align-items: center;
 }
 
 .hero-images img {
-    max-width: 100%; /* Asegurarse de que las imágenes no se desborden */
-    margin-bottom: 20px; /* Espacio entre imágenes */
+    max-width: 100%;
+    margin-bottom: 20px;
 }
-
-
